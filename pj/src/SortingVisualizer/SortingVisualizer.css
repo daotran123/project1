@@ -1,0 +1,34 @@
+.array-container {
+    display: flex;
+    align-items: flex-end;
+    /* Căn các cột xuống đáy */
+    justify-content: center;
+    /* Căn giữa các cột trong container */
+    height: 500px;
+    /* Chiều cao của container */
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    position: relative;
+    background-color: #f9f9f9;
+}
+
+.array-bar {
+    background-color: #007bff;
+    /* Màu cột */
+    width: 10px;
+    /* Độ rộng của mỗi cột */
+    margin: 0 1px;
+    /* Khoảng cách giữa các cột */
+    transition: all 0.2s ease-in-out;
+    /* Hiệu ứng khi thay đổi chiều cao */
+}
+
+.array-bar:hover {
+    background-color: #ff5733;
+    /* Màu khi di chuột vào */
+}
+
+.array-bar.final {
+    background-color: red !important;
+}
